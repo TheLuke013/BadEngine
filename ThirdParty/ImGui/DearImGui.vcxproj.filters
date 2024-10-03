@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ImGui">
+      <UniqueIdentifier>{73E730A3-DFA7-ACD9-A8E2-F5561462F1B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ImGui\extras">
+      <UniqueIdentifier>{59E120CC-4570-AA95-EE8E-BE90DAFCBA3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ImGui\extras\FA6FreeSolidFontData.h">
+      <Filter>include\ImGui\extras</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\extras\IconsFontAwesome6.h">
+      <Filter>include\ImGui\extras</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\imconfig.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\imgui.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\imgui_impl_raylib.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\imgui_internal.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\imstb_rectpack.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\imstb_textedit.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\imstb_truetype.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\rlImGui.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImGui\rlImGuiColors.h">
+      <Filter>include\ImGui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\imgui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui_demo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui_draw.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui_tables.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui_widgets.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rlImGui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
