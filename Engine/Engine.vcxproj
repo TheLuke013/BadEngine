@@ -158,13 +158,20 @@
     <ClInclude Include="include\Engine\Core\Log.h" />
     <ClInclude Include="include\Engine\Core\Window.h" />
     <ClInclude Include="include\Engine\Engine.h" />
+    <ClInclude Include="include\Engine\ImGui\ImGuiManager.h" />
     <ClInclude Include="include\Engine\Renderer\Camera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp" />
     <ClCompile Include="src\Core\Log.cpp" />
     <ClCompile Include="src\Core\Window.cpp" />
+    <ClCompile Include="src\ImGui\ImGuiManager.cpp" />
     <ClCompile Include="src\Renderer\Camera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\ImGui\DearImGui.vcxproj">
+      <Project>{1CA84653-8812-FBC9-D150-AC6F3DFAD81E}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

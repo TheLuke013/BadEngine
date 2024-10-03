@@ -2,11 +2,12 @@
 
 namespace Engine
 {
-	Window::Window(const std::string& title, int width, int height)
+	Window::Window(const std::string& title, int width, int height, int fps)
 	{
 		properties.title = title;
 		properties.width = width;
 		properties.height = height;
+		properties.fps = fps;
 	}
 
 	Window::~Window()
@@ -16,7 +17,9 @@ namespace Engine
 
 	void Window::Init()
 	{
+		SetConfigFlags(properties.flags);
 		InitWindow(properties.width, properties.height, properties.title.c_str());
+		SetTargetFPS(properties.fps);
 	}
 
 	void Window::Close()

@@ -13,6 +13,7 @@ namespace Editor
 
     void EditorApplication::OnReady()
     {
+        
     }
 
     void EditorApplication::OnUpdate()

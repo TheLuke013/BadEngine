@@ -5,6 +5,7 @@
 #include "Engine/Core/Log.h"
 #include "Engine/Core/Window.h"
 #include "Engine/Renderer/Camera.h"
+#include "Engine/ImGui/ImGuiManager.h"
 
 namespace Engine
 {
@@ -21,9 +22,12 @@ namespace Engine
 		void Run();
 		void Quit();
 
+		ImGuiManager* GetImGui() { return imguiManager; }
+
 	private:
 		bool isRunning;
 		Window* window;
+		ImGuiManager* imguiManager;
 		Camera camera;
 
 	};

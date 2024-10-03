@@ -10,6 +10,9 @@
     <Filter Include="include\Engine\Core">
       <UniqueIdentifier>{06AF7083-7210-4E91-FB7D-944367DE8450}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\Engine\ImGui">
+      <UniqueIdentifier>{9855F1F1-84E4-7ABB-2D03-8FB619718B61}</UniqueIdentifier>
+    </Filter>
     <Filter Include="include\Engine\Renderer">
       <UniqueIdentifier>{547584E7-C0AC-CC7E-C9B6-30A2356DF377}</UniqueIdentifier>
     </Filter>
@@ -18,6 +21,9 @@
     </Filter>
     <Filter Include="src\Core">
       <UniqueIdentifier>{A5D31CCF-91A0-77DA-BAB9-6582A6E5AC68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ImGui">
+      <UniqueIdentifier>{170E22B3-8378-D629-CCB6-87CF3860B47E}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Renderer">
       <UniqueIdentifier>{73D1DFBF-5F34-6F64-08BA-A71AF4FB3AE7}</UniqueIdentifier>
@@ -42,6 +48,9 @@
     <ClInclude Include="include\Engine\Engine.h">
       <Filter>include\Engine</Filter>
     </ClInclude>
+    <ClInclude Include="include\Engine\ImGui\ImGuiManager.h">
+      <Filter>include\Engine\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="include\Engine\Renderer\Camera.h">
       <Filter>include\Engine\Renderer</Filter>
     </ClInclude>
@@ -55,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="src\Core\Window.cpp">
       <Filter>src\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\ImGuiManager.cpp">
+      <Filter>src\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Renderer\Camera.cpp">
       <Filter>src\Renderer</Filter>

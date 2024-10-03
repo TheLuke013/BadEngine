@@ -3,7 +3,7 @@
 namespace Engine
 {
 	Application::Application()
-		: window(new Window("Bad Engine", 1024, 600))
+		: window(new Window("Bad Engine", 1024, 600, 60)), imguiManager(new ImGuiManager())
 	{
 		isRunning = true;
 
@@ -11,11 +11,15 @@ namespace Engine
 		LOG_INFO("Engine Initialized");
 
 		window->Init();
+		imguiManager->Init();
 	}
 
 	Application::~Application()
 	{
-		//window.Close();
+		window->Close();
+
+		delete imguiManager;
+		delete window;
 
 		LOG_INFO("Engine Shutdown");
 		Log::Shutdown();
@@ -23,8 +27,6 @@ namespace Engine
 
 	void Application::Run()
 	{
-		SetTargetFPS(60);
-
 		OnReady();
 
 		while (isRunning && !window->IsClosed())
@@ -33,7 +35,18 @@ namespace Engine
 
 			BeginDrawing();
 
-				ClearBackground(SKYBLUE);
+				ClearBackground(DARKGRAY);
+
+				//process imgui if active
+				if (imguiManager->IsActive())
+				{
+					rlImGuiBegin();
+
+					bool open = true;
+					ImGui::ShowDemoWindow(&open);
+
+					rlImGuiEnd();
+				}
 
 			EndDrawing();
 		}
